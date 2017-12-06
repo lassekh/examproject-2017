@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ----------------------------------------------------------
+	CSS - Page Contact
+   ---------------------------------------------------------- */
+
+h1 {
+	margin-bottom: 20px;
+	color: var(--color-cyan);
+	font-size: 60px;
+	text-transform: uppercase;
+}
+.section-main-top {
+	border-left: 10px solid var(--color-cyan);
+}
+@media screen and (max-width: 668px) {
+	.section-main-top {
+		border-top: 10px solid var(--color-cyan) !important;
+	}
+}
+.page_description {
+	color: var(--color-cyan);
+}
+.section-main-top aside {
+	background-color: var(--color-cyan);
+}
+.section-main-top aside ul li .sidebar_link:hover {
+	background: rgb(0,204,187); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(0,204,187,1) 0%, rgba(0, 255, 221,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,204,187,1) 0%,rgba(0, 255, 221,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,204,187,1) 0%,rgba(0, 255, 221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#contact_container {
+	border-color: var(--color-cyan);
+}
+#contact_container .content {
+	background-color: var(--color-cyan-02);
+}
+#contact_container aside {
+	background-color: var(--color-cyan-05);
+}
