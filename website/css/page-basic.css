@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ----------------------------------------------------------
+	CSS - Page Basic
+   ---------------------------------------------------------- */
+
+h1 {
+	color: var(--color-yellow);
+}
+.section-main-top {
+	border-left: 10px solid var(--color-yellow);
+}
+@media screen and (max-width: 668px) {
+	.section-main-top {
+		border-top: 10px solid var(--color-yellow) !important;
+	}
+}
+.section-main-top aside {
+	background-color: var(--color-yellow);
+}
+.section-main-top aside ul li .sidebar_link:hover {
+	background: rgb(238,204,0); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(238,204,0,1) 0%, rgba(255, 238, 0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(238,204,0,1) 0%,rgba(255, 238, 0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(238,204,0,1) 0%,rgba(255, 238, 0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#basic_container {
+	border-color: var(--color-yellow);
+}
+#basic_container .content {
+	background-color: var(--color-yellow-02);
+}
+#basic_container aside {
+	background-color: var(--color-yellow-05);
+}

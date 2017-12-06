@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 900px) {
+	#eventcontainer article {
+		width: calc(50% - 20px);
+	}
+	.section-main-top .content {
+		width: 50%;
+		padding: 40px 40px 45px;
+	}
+	.section-main-top aside {
+		width: 50%;
+	}
+	section.container .content {
+		width: 50%;
+	}
+	section.container aside {
+		width: 50%;
+	}
+}
+@media (orientation: portrait) {
+	#eventcontainer article header .event_image_link {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (orientation: landscape) {
+	#eventcontainer article header .event_image_link {
+		width: auto;
+		height: 100%;
+	}
+}
+@media screen and (max-width: 668px) {
+	.section-main-top {
+		display: flex;
+		flex-direction: column;
+		border-top: 10px solid white;
+		border-left: none;
+	}
+	.section-main-top .content {
+		width: 100%;
+		padding: 40px 40px 45px;
+	}
+	.section-main-top aside {
+		width: 100%;
+	}
+	#eventcontainer article {
+		width: calc(100% - 20px);
+	}
+	section.container {
+		display: flex;
+		flex-direction: column;
+	}
+	section.container .content {
+		width: 100%;
+	}
+	section.container aside {
+		width: 100%;
+	}
+}
