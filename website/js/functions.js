@@ -10,8 +10,22 @@ function onLoadFunctions() {
 			document.querySelector(".main-top .content .main-sidebar-left .history").classList.remove("none");
 		}
 	});
+*/
 
-*/} // onLoad
+showMore();
+	
+function showMore() {
+
+	document.querySelector(".read-more").addEventListener("click", function(){
+		if(document.querySelector(this).parentElement.children.className = "content active") {
+			document.querySelector(this).classList.remove("less");
+		} else {
+			document.querySelector(this).classList.add("less");
+		}
+	});
+}
+
+} // onLoad
 
 document.addEventListener("DOMContentLoaded", function () {
 	onLoadFunctions();

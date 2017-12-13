@@ -1,5 +1,321 @@
 @charset "utf-8";
 /* CSS Document */
 
-.main-menu {
+/* ----------------------------------------------------------
+	CSS | Header - Main Top
+   ---------------------------------------------------------- */
+
+.main-top .main-container,
+.main-bottom .main-container {
+	background-color: var(--color_green-dark);
+	background-image: url("../img/bg.svg");
+	display: flex;
+	justify-content: flex-end;
+	max-width: 1366px;
+	width: calc(100% - 10vw);
+	height: 162px;
+	position: absolute;
+}
+.main-top .main-container {
+	top: 54px;
+}
+.main-bottom .main-container {
+	bottom: 54px;
+}
+.main-top .main-container::before,
+.main-bottom .main-container::before {
+	content: "\0020";
+	background: -moz-linear-gradient(left, var(--color_green-dark) 300px, rgba(30,87,153,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, var(--color_green-dark) 300px,rgba(30,87,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, var(--color_green-dark) 300px,rgba(30,87,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.main-top .main-container .dannebrog,
+.main-bottom .main-container .dannebrog {
+	width: 45px;
+	height: auto;
+	position: absolute;
+	right: 407px;
+}
+.main-top .main-container .dannebrog {
+	top: 27px;
+}
+.main-bottom .main-container .dannebrog {
+	top: 55px;
+}
+.main-top .main-container .e-marking,
+.main-bottom .main-container .e-marking {
+	width: 45px;
+	height: auto;
+	position: absolute;
+	right: 407px;
+}
+.main-top .main-container .e-marking {
+	bottom: 55px;
+}
+.main-bottom .main-container .e-marking {
+	bottom: 27px;
+}
+.main-top .main-container .logo,
+.main-bottom .main-container .logo {
+	background-image: url("../img/logo_white.svg");
+	background-size: 290px 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 446px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.main-top .main-container .logo:hover,
+.main-bottom .main-container .logo:hover {
+	background-image: url("../img/logo_hover.svg");
+	background-repeat: no-repeat;
+}
+.main-top .main-container .main-content,
+.main-bottom .main-container .main-content {
+	position: relative;
+}
+
+/* ----------------------------------------------------------
+	CSS | Header - Basket
+   ---------------------------------------------------------- */
+
+.main-top .main-container .main-content .basket {
+	background-color: var(--color_green);
+	display: flex;
+	justify-content: space-between;
+	width: 380px;
+}
+.main-top .main-container .main-content .basket .go_to {
+	width: 108px;
+	height: 108px;
+	position: relative;
+}
+.main-top .main-container .main-content .basket .go_to::before {
+	font-size: 32px;
+	line-height: 60px;
+}
+.main-top .main-container .main-content .basket .cart {
+	width: 100%;
+	padding: 22px;
+	padding-right: 0;
+	cursor: pointer;
+}
+.main-top .main-container .main-content .basket .cart::after {
+	content: "\203a";
+	background-color: var(--color_green);
+	width: 32px;
+	height: 32px;
+	margin: 16px;
+	position: absolute;
+	top: 22px;
+	right: 108px;
+	color: var(--color_green-dark);
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 28px;
+	text-align: center;
+	transform: rotate(90deg);
+}
+.main-top .main-container .main-content .basket .cart:hover::after {
+	background-color: var(--color_green-medium);
+}
+.main-top .main-container .main-content .basket .cart h5 {
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 100%;
+	padding: 0 22px;
+	color: var(--color_green-dark);
+	font-size: 14px;
+	line-height: 31px;
+	letter-spacing: 1px;
+}
+.main-top .main-container .main-content .basket .cart h5 span {
+	margin-right: 6px;
+}
+.main-top .main-container .main-content .basket .cart .cart_price {
+	margin-top: 2px;
+}
+.main-top .main-container .main-content .basket .cart .cart_price span {
+	margin-left: 6px;
+}
+
+/* ----------------------------------------------------------
+	CSS | Header - Main Menu
+   ---------------------------------------------------------- */
+
+.main-top .main-container .main-content .main-menu {
+	display: flex;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
+
+/* -----------------------------
+	CSS | Header - Language Menu
+   ----------------------------- */
+
+.main-top .main-container .main-content .main-menu .lang-menu .container {
+	background-color: white;
+	display: flex;
+}
+.main-top .main-container .main-content .main-menu .lang-menu .container a {
+	position: relative;
+	padding: 15px 40px 14px;
+	color: var(--color_green-dark);
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.main-top .main-container .main-content .main-menu .lang-menu .container li:first-child a {
+	width: 95px;
+	padding-right: 20px;
+	text-align: right;
+}
+.main-top .main-container .main-content .main-menu .lang-menu .container li:last-child a {
+	width: 95px;
+	padding-left: 20px;
+}
+.main-top .main-container .main-content .main-menu .lang-menu .container li a::after {
+	content: "\007c";
+	position: absolute;
+	top: 0;
+	right: -4px;
+	z-index: 999;
+	color: var(--color_green-dark);
+	line-height: 54px;
+	text-align: right;
+}
+.main-top .main-container .main-content .main-menu .lang-menu .container li:last-child a::after  {
+	display: none;
+}
+.main-top .main-container .main-content .main-menu .lang-menu .container li a:hover {
+	background-color: var(--color_green);
+}
+
+/* -----------------------------
+	CSS | Header - Open Basket
+   ----------------------------- */
+
+.main-top .main-container .main-content .main-menu .cart-open {
+	background-color: var(--color_green);
+	display: none;
+	width: 54px;
+	height: 54px;
+	color: var(--color_green-dark);
+	cursor: pointer;
+}
+.main-top .main-container .main-content .main-menu .cart-open::before {
+	width: inherit;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 54px;
+	text-align: center;
+	cursor: pointer;
+}
+.main-top .main-container .main-content .main-menu .cart-open:hover {
+	background-color: var(--color_green-medium);
+}
+.main-top .main-container .main-content .main-menu .cart-open.active {
+	background-color: var(--color_green-medium);
+	display: flex;
+}
+.main-top .main-container .main-content .main-menu .cart-open.active:hover {
+	background-color: var(--color_green);
+}
+
+/* -----------------------------
+	CSS | Header - Main Submenu
+   ----------------------------- */
+
+.main-top .main-container .main-content .main-menu .main-submenu .menu-title {
+	background-color: var(--color_green-dark);
+	display: flex;
+	margin: 0;
+	color: white;
+	line-height: 54px;
+	cursor: pointer;
+}
+.main-top .main-container .main-content .main-menu .main-submenu .menu-title span {
+	background-color: var(--color_green-dark);
+	width: 136px;
+	text-align: center;
+}
+.main-top .main-container .main-content .main-menu .main-submenu .menu-title::after {
+	content: "\2026";
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 54px;
+	height: 54px;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 38px;
+	text-align: center;
+	text-indent: 2px;
+}
+.main-top .main-container .main-content .main-menu .main-submenu .menu-title:hover::after {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.main-top .main-container .main-content .main-menu .main-submenu .menu-title.active::after {
+	content: "\00d7";
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 50px;
+}
+
+/* -----------------------------
+	CSS | Header - Main Submenu Open
+   ----------------------------- */
+
+.main-top .main-container .main-content .main-menu .main-submenu .container {
+	background-color: var(--color_green-dark);
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 54px;
+	left: 0;
+	color: white;
+	line-height: 54px;
+}
+.main-top .main-container .main-content .main-menu .main-submenu .container.active {
+	display: flex;
+}
+.main-top .main-container .main-content .main-menu .main-submenu .container a {
+	background-color: rgba(255, 255, 255, 0.1);
+	display: flex;
+	justify-content: space-between;
+	padding-left: 27px;
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 2px;
+}
+.main-top .main-container .main-content .main-menu .main-submenu .container li:last-child a {
+	margin-bottom: 0;
+}
+.main-top .main-container .main-content .main-menu .main-submenu .container a::after {
+	content: "\203a";
+	background-color: rgba(255, 255, 255, 0.05);
+	width: 54px;
+	height: 54px;
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 50px;
+	text-align: center;
+	text-indent: 2px;
+}
+.main-top .main-container .main-content .main-menu .main-submenu .container a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.main-top .main-container .main-content .main-menu .main-submenu .container a:hover::after {
+	background-color: rgba(255, 255, 255, 0.1);
 }

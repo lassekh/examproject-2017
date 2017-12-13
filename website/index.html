@@ -11,12 +11,24 @@
 <link rel="stylesheet" type="text/css" href="css/media.css">
 <script src="https://use.fontawesome.com/952bf2d419.js"></script>
 </head>
-<body>
+<body id="to-top">
 <header class="main-top">
-	<div class="bg-circle"></div>
+	<div class="overflow">
+		<div class="bg-circle"></div>
+		<div class="go-down">
+			<a href="#container"></a>
+		</div>
+	</div>
+
+<!-------------------------------
+	HTML | Header - Top
+  ------------------------------->
+
 	<section class="main-container">
 		<a class="logo" href="index.html"></a>
 		<div class="main-content">
+			<img class="dannebrog" src="img/dannebrog.svg" width="370px" height="280px" alt="This website is from Denmark | Dannebrog - Danish flag" title="Website from Denmark" />
+			<img class="e-marking" src="img/e-maerke.svg" width="370px" height="220px" alt="E-mark - Danish online shopping certification" title="Danish online shopping certification" />
 			<div class="basket">
 				<div class="cart">
 					<h5 class="cart_items"><span>0</span>varer i kurven</h5>
@@ -24,6 +36,11 @@
 				</div>
 				<a class="go_to fa fa-shopping-bag" aria-hidden="true" href="#"></a>
 			</div>
+
+<!-------------------------------
+	HTML | Header - Main Menu
+  ------------------------------->
+
 			<div class="main-menu">
 				<template id="main-menu_template">
 					<li>
@@ -48,14 +65,17 @@
 			</div>
 		</div>
 	</section>
+
+<!-------------------------------
+	HTML | Header - Content
+  ------------------------------->
+
 	<section class="content">
 		<aside class="main-sidebar-left">
-			<h1 class="page_title">Velkommen til min side med danske keramiske produkter</h1>
-			<p class="page_description"> Alle er designet og produceret fra i mit eget værksted på Blågårdsplads.</p>
-			<article class="history">
-				<h3 class="subpage_subtitle"><span>Min historie</span></h3>
-				<h2 class="subpage_title">Lorem ipsum sed diam nonummy nibh euismod tincidunt</h2>
-				<p class="subpage_description">Ut wisi enim ad minim veniam, quis trud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+			<div class="page_description"></div>
+			<article>
+				<h3 class="subpage_subtitle"></h3>
+				<div class="subpage_description"></div>
 				<a class="go_to" href="#"></a>
 			</article>
 		</aside>
@@ -71,29 +91,181 @@
 	</section>
 </header>
 <section id="container">
-	<section id="basic_container" class="container">
-		<h3 class="page_subtitle"></h3>
-		<div class="process">
-			<div class="text_area_1"></div>
-			<div class="text_area_2"></div>
-			<div class="text_area_3"></div>
-			<div class="text_area_4"></div>
-			<div class="text_area_5"></div>
-			<div class="text_area_6"></div>
-			<div class="text_area_7"></div>
-			<div class="text_area_8"></div>
+
+<!-------------------------------
+	HTML | Container - Procss
+  ------------------------------->
+
+	<section id="process_container">
+		<h3 class="subpage_title">Processen</h3>
+		<article>
+			<div class="wrapper">
+				<div id="area_1" class="col-3">
+					<div class="description">
+						<h5 class="number">1</h5>
+						<div class="content">
+							<h3></h3>
+							<p></p>
+						</div>
+					</div>
+					<p class="read-more"></p>
+					<div class="img img_1"></div>
+				</div>
+				<div id="area_2" class="col-3">
+					<div class="description">
+						<h5 class="number">2</h5>
+						<div class="content">
+							<h3></h3>
+							<p></p>
+						</div>
+					</div>
+					<p class="read-more"></p>
+					<div class="img img_2"></div>
+				</div>
+				<div id="area_3" class="col-3">
+					<div class="description">
+						<h5 class="number">3</h5>
+						<div class="content">
+							<h3></h3>
+							<p></p>
+						</div>
+					</div>
+					<p class="read-more"></p>
+					<div class="img img_3"></div>
+				</div>
+				<div id="area_4" class="col-3">
+					<div class="description">
+						<h5 class="number">4</h5>
+						<div class="content">
+							<h3></h3>
+							<p></p>
+						</div>
+					</div>
+					<p class="read-more"></p>
+					<div class="img img_4"></div>
+				</div>
+				<div id="area_5" class="col-3">
+					<div class="description">
+						<h5 class="number">5</h5>
+						<div class="content">
+							<h3></h3>
+							<p></p>
+						</div>
+					</div>
+					<p class="read-more"></p>
+					<div class="img img_5"></div>
+				</div>
+				<div id="area_6" class="col-3">
+					<div class="description">
+						<h5 class="number">6</h5>
+						<div class="content">
+							<h3></h3>
+							<p></p>
+						</div>
+					</div>
+					<p class="read-more"></p>
+					<div class="img img_6"></div>
+				</div>
+			</div>
+		</article>
+	</section>
+
+<!-------------------------------
+	HTML | Container - Product
+  ------------------------------->
+
+	<section id="product_container">
+		<h3 class="subpage_title">Produkter</h3>
+		<template id="product_template">
+			<article class="product">
+				<div class="wrapper">
+					<aside class="showing_product">
+						<img class="product_img" src="img/bg.svg" width="500" height="500" alt="" title="" />
+						<footer>
+							<p class="rotate_left"></p>
+							<p class="rotation">360°</p>
+							<p class="rotate_right"></p>
+						</footer>
+					</aside>
+					<div class="product_container">
+						<a class="go_to_category" href="#"></a>
+						<div class="product_wrapper">
+							<div class="product_content">
+								<h3 class="product_title"></h3>
+								<p class="product_description"></p>
+								<h4 class="product_color">Farve | <span>Hvid</span></h4>
+								<footer>
+									<template id="product_color_template">
+										<li>
+											<img class="color_item" src="#" width="27" height="27" alt="" title="" />
+										</li>
+									</template>
+									<ul class="product_colers">
+										<li>
+											<img class="color_item" src="#" width="27" height="27" alt="" title="" />
+										</li>
+										<li>
+											<img class="color_item" src="#" width="27" height="27" alt="" title="" />
+										</li>
+										<li>
+											<img class="color_item" src="#" width="27" height="27" alt="" title="" />
+										</li>
+										<li>
+											<img class="color_item" src="#" width="27" height="27" alt="" title="" />
+										</li>
+									</ul>
+								</footer>
+							</div>
+							<aside class="product_info">
+								<h4 class="product_info_title">Mål</h4>
+								<p class="product_info_description"></p>
+								<a class="buy_product" href="#">Køb</a>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</article>
+		</template>
+	</section>
+</section>
+<footer class="main-bottom">
+	<div class="go-up">
+		<a href="#to-top"></a>
+	</div>
+	<section class="content">
+		<aside class="main-sidebar-left">
+			<h1 class="page_title">Kontakt oplysninger</h1>
+			<p class="page_description"><a class="tel fa-phone" href="tel:+4535372981">+45 35 37 29 81</a><a class="mail fa-envelope" href="mailto:rigmorals@firkant.net">rigmorals@firkant.net</a></p>
+		</aside>
+		<aside class="main-sidebar-right">
+			<!-- Video her ----------------------------->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1269223189393!2d12.554848815927986!3d55.68678108053571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253a9d6d069f5%3A0xe995ccef1ead4201!2sRigmor+Als+Design!5e0!3m2!1sen!2sdk!4v1513097869536" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</aside>
+	</section>
+
+<!-------------------------------
+	HTML | Footer - Bottom
+  ------------------------------->
+
+	<section class="main-container">
+		<a class="logo" href="index.html"></a>
+		<div class="main-content">
+			<img class="dannebrog" src="img/dannebrog.svg" width="370px" height="280px" alt="This website is from Denmark | Dannebrog - Danish flag" title="Website from Denmark" />
+			<img class="e-marking" src="img/e-maerke.svg" width="370px" height="220px" alt="E-mark - Danish online shopping certification" title="Danish online shopping certification" />
+			<div class="address">
+				<address>
+					<h5>Keramikbutikken Rigmor Als</h5>
+					<h5>Blågårds Plads 12</h5>
+					<h5>2200 - København N</h5>
+				</address>
+			</div>
 		</div>
 	</section>
-	
-	
-	
-</section>
-<footer class="">
+	<div class="bg-circle"></div>
 </footer>
-<!--
+
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
--->
 <script type="text/javascript" src="js/functions.js"></script>
 </body>
 </html>
